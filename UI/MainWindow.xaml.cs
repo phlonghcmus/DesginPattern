@@ -31,7 +31,7 @@ namespace UI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(taikhoan.Text, matkhau.Text,email.Text);
+            User user = new User(taikhoan.Text, matkhau.Text,email.Text,date.Text);
             Validation validation = new Validation();
             HashSet<Violation> violations = validation.validate(user);
             foreach (Violation violation in violations)

@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phlon\\OneDrive\\Desktop\\UI\\UI\\UI.csproj": {}
+    "D:\\Download\\Education\\DesignPattern\\DesginPattern\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phlon\\OneDrive\\Desktop\\UI\\UI\\UI.csproj": {
+    "D:\\Download\\Education\\DesignPattern\\DesginPattern\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phlon\\OneDrive\\Desktop\\UI\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\Download\\Education\\DesignPattern\\DesginPattern\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\phlon\\OneDrive\\Desktop\\UI\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\phlon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phlon\\OneDrive\\Desktop\\UI\\UI\\obj\\",
+        "projectPath": "D:\\Download\\Education\\DesignPattern\\DesginPattern\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\v\\.nuget\\packages\\",
+        "outputPath": "D:\\Download\\Education\\DesignPattern\\DesginPattern\\UI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\phlon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\v\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
