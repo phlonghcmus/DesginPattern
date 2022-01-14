@@ -31,7 +31,9 @@ namespace UI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(taikhoan.Text, matkhau.Text,email.Text,date.Text);
+            string intString = "12.3";
+            string floatString = "123";
+            User user = new User(taikhoan.Text, matkhau.Text,email.Text,date.Text,intString,floatString);
             Validation validation = new Validation();
             HashSet<Violation> violations = validation.validate(user);
             foreach (Violation violation in violations)
