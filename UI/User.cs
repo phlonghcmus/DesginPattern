@@ -10,25 +10,30 @@ namespace UI
 {
     internal class User
     {
-        public User(string taikhoan, string matkhau, string email, string date)
+        public User(string taikhoan, string matkhau, string email, string date, string regex)
         {
             this.taikhoan = taikhoan;
             this.matkhau = matkhau;
             this.email = email;
             this.date = date;
+            this.regex = regex;
         }
         [Required(ErrorMessage = "Tài khoản là bắt buộc")]
         [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Phải dài từ 8-16 ký tự")]
         public string taikhoan { get; set; }
+
         [Required(ErrorMessage = "Mật khẩu là bắt buộc")]
         [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Phải dài từ 8-16 ký tự")]
-        
         public string matkhau { get; set; }
 
         [Required(ErrorMessage = "Email là bắt buộc")]
         [Email(ErrorMessage = "Email không đúng định dạng")]
         public string email { get; set; }
-        [Date(ErrorMessage ="Ngày không đúng định dạng")]
+
+        [Date(ErrorMessage = "Ngày không đúng định dạng")]
         public string date { get; set; }
+
+        [Regex(ErrorMessage = "Regex không đúng")]
+        public string regex { get; set; }
     }
 }

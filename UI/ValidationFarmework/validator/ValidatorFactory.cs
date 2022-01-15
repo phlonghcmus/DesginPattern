@@ -20,6 +20,7 @@ namespace Project.ValidationFarmework.validator
             validatorMap.Add("Range", new RangeValidator());
             validatorMap.Add("Max", new MaxValidator());
             validatorMap.Add("Date",new DateValidator());
+            validatorMap.Add("Regex", new RegexValidator());
         }
         public ValidatorFactory()
         {
@@ -32,7 +33,7 @@ namespace Project.ValidationFarmework.validator
             return validatorMap.ContainsKey(strTypeValidator);
         }
 
-        public Validator create(string strTypeValidator)
+        public Validator? create(string strTypeValidator)
         {
             if (CheckValidatorType(strTypeValidator))
                 return validatorMap[strTypeValidator];

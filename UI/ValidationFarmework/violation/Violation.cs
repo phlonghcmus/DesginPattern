@@ -7,7 +7,6 @@ namespace Project.ValidationFarmework.violation
         void setMessage(string message);
         void setValid(bool valid);
         bool getValid();
-
         string getProp();
         string getMessage();
     }

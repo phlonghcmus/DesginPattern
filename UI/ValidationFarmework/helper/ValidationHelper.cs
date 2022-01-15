@@ -33,6 +33,23 @@ namespace Project.ValidationFarmework.helper
             }
         }
 
+        //regex validation
+        public static bool IsValidRegex(string value)
+        {
+            if (string.IsNullOrWhiteSpace(value)) return false;
+
+            try
+            {
+                Regex.Match("", value);
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         //email validation using data-anotation
         public bool IsValidEmailVersion2(string email)
         {
@@ -52,5 +69,6 @@ namespace Project.ValidationFarmework.helper
             DateTime tempDate;
             return DateTime.TryParse(txtDate, out tempDate);
         }
+
     }
 }

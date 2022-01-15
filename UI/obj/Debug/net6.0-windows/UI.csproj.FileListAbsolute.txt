@@ -61,3 +61,24 @@ D:\Download\Education\DesignPattern\DesginPattern\UI\obj\Debug\net6.0-windows\UI
 D:\Download\Education\DesignPattern\DesginPattern\UI\obj\Debug\net6.0-windows\ref\UI.dll
 D:\Download\Education\DesignPattern\DesginPattern\UI\obj\Debug\net6.0-windows\UI.pdb
 D:\Download\Education\DesignPattern\DesginPattern\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\UI.exe
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\UI.deps.json
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\UI.dll
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\ref\UI.dll
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\bin\Debug\net6.0-windows\UI.pdb
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\App.g.cs
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.cache
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.lref
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.g.resources
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.AssemblyInfo.cs
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.csproj.CoreCompileInputs.cache
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.dll
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\ref\UI.dll
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.pdb
+D:\HỌC\năm 4\học kì 1 - năm 4\Mẫu thiết kế hướng đối tượng và ứng dụng\DoAnCuoiKy\DesginPattern\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
