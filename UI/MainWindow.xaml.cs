@@ -35,10 +35,23 @@ namespace UI
             //User user = new User((string)taikhoan.Text);
             Validation validation = Validation.GetInstance();
             HashSet<Violation> violations = validation.validate(user);
+            List<string> notification = new List<string>();
             foreach (var violation in violations)
             {
-                MessageBox.Show(violation.getProp() + "-->" + violation.getMessage());
+                notification.Add(violation.getMessage());
             }
+            if(notification.Count > 0)
+            {
+                var message = string.Join(Environment.NewLine, notification.ToArray());
+                MessageBox.Show(message,"Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                MessageBox.Show("Đăng ký thành công","Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            
+
         }
+
     }
 }

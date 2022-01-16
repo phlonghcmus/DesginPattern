@@ -5,20 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MyForm" Height="510" Width="400">
+        Title="MyForm" Height="519" Width="400">
     <Grid>
-        <Label Content="Form đăng ký" HorizontalAlignment="Left" Height="61" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" FontSize="40"/>
+        <Label Content="Form đăng ký" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" FontSize="40"/>
+
+        <Label Content="Tài khoản" HorizontalAlignment="Left" Height="29" Margin="22,81,0,0" VerticalAlignment="Top" Width="70"/>
         <TextBox x:Name="taikhoan" HorizontalAlignment="Center" Height="28" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
-        <TextBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
-        <TextBox x:Name="email" HorizontalAlignment="Center" Height="28" Margin="0,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
-        <TextBox x:Name="date" HorizontalAlignment="Center" Height="28" Margin="0,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
-        <Label Content="Tài khoản" HorizontalAlignment="Left" Height="29" Margin="21,76,0,0" VerticalAlignment="Top" Width="70"/>
-        <Label Content="Mật khẩu" HorizontalAlignment="Left" Height="29" Margin="21,138,0,0" VerticalAlignment="Top" Width="70"/>
-        <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="21,194,0,0" VerticalAlignment="Top" Width="70"/>
-        <Label Content="Date" HorizontalAlignment="Left" Height="29" Margin="21,260,0,0" VerticalAlignment="Top" Width="70"/>
-        <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,424,22,0" Click="Button_Click"/>
-        <TextBox x:Name="regex" HorizontalAlignment="Center" Height="28" Margin="0,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
-        <Label Content="Regex" HorizontalAlignment="Left" Height="29" Margin="21,333,0,0" VerticalAlignment="Top" Width="70"/>
+
+        <Label Content="Mật khẩu" HorizontalAlignment="Left" Height="29" Margin="22,138,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+
+        <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="22,195,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="email" HorizontalAlignment="Center" Height="28" Margin="0,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+
+        <Label Content="Date" HorizontalAlignment="Left" Height="29" Margin="22,252,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="date" HorizontalAlignment="Center" Height="28" Margin="0,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+
+        <Label Content="Regex" HorizontalAlignment="Left" Height="29" Margin="22,309,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="regex" HorizontalAlignment="Center" Height="28" Margin="0,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+
+        <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,409,22,0" Click="Button_Click"/>
 
     </Grid>
 </Window>

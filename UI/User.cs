@@ -19,11 +19,11 @@ namespace UI
             this.regex = regex;
         }
         [Required(ErrorMessage = "Tài khoản là bắt buộc")]
-        [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Phải dài từ 8-16 ký tự")]
+        [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Tài khoản phải dài từ 8-16 ký tự")]
         public string taikhoan { get; set; }
 
         [Required(ErrorMessage = "Mật khẩu là bắt buộc")]
-        [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Phải dài từ 8-16 ký tự")]
+        [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Mật khẩu phải dài từ 8-16 ký tự")]
         public string matkhau { get; set; }
 
         [Required(ErrorMessage = "Email là bắt buộc")]
