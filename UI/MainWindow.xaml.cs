@@ -1,4 +1,5 @@
-﻿using Project.ValidationFarmework.violation;
+﻿using Project.ValidationFarmework.validator;
+using Project.ValidationFarmework.violation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UI.CustomValidator;
 using Validation = Project.ValidationFarmework.validation.Validation;
 
 namespace UI
@@ -27,6 +29,8 @@ namespace UI
         public MainWindow()
         {
             InitializeComponent();
+            ValidatorFactory validatorFactory = ValidatorFactory.GetInstance();
+            validatorFactory.addValidator("NewVal", new NewValidator());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

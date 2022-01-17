@@ -26,10 +26,5 @@ namespace Project.ValidationFarmework.validator
 
         protected abstract bool invalid(PropertyInfo prop, object value);
         protected abstract string getMessage(PropertyInfo prop);
- /*       private string getMessage(PropertyInfo prop)
-        {
-            T attr = (T)Attribute.GetCustomAttribute(prop, typeof(T));
-            return attr.ErrorMessage;
-        }*/
     }
 }

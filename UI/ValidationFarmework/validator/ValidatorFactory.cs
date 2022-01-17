@@ -8,8 +8,18 @@ namespace Project.ValidationFarmework.validator
 {
     public class ValidatorFactory
     {
-        private static Dictionary<string, Validator> validatorMap = new Dictionary<string,Validator>();
+        private Dictionary<string, Validator> validatorMap = new Dictionary<string,Validator>();
 
+        private static ValidatorFactory _instance;
+
+        public static ValidatorFactory GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new ValidatorFactory();
+            }
+            return _instance;
+        }
         private void Init()
         {
             validatorMap.Clear();
@@ -25,10 +35,11 @@ namespace Project.ValidationFarmework.validator
             validatorMap.Add("IsFloat", new IsFloatValidator());
 
         }
-        public ValidatorFactory()
+        private ValidatorFactory()
         {
             Init();
         }
+
         public bool addValidator(string nameValidator, Validator newValidator)
         {
             if (validatorMap.ContainsKey(nameValidator))
@@ -40,7 +51,6 @@ namespace Project.ValidationFarmework.validator
             }
 
         }
-
 
         private bool CheckValidatorType(string strTypeValidator)
         {

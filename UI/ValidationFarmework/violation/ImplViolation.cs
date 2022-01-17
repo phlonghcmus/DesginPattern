@@ -11,7 +11,7 @@ namespace Project.ValidationFarmework.violation
     {
         private string prop;
         private object value;
-        private string messeage;
+        private string message;
         private bool valid = true;
 
         public ImplViolation(string prop, object value)
@@ -22,7 +22,7 @@ namespace Project.ValidationFarmework.violation
 
         public string getMessage()
         {
-            return messeage;
+            return message;
         }
 
         public string getProp()
@@ -37,7 +37,7 @@ namespace Project.ValidationFarmework.violation
 
         public void setMessage(string message)
         {
-            this.messeage = message;
+            this.message = message;
         }
 
         public void setValid(bool valid)

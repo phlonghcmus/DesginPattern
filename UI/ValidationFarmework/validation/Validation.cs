@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UI.CustomValidator;
 
 namespace Project.ValidationFarmework.validation
 {
@@ -26,7 +27,7 @@ namespace Project.ValidationFarmework.validation
         public HashSet<Violation> validate(Object o)
         {
             HashSet<Violation> violations = new HashSet<Violation>();
-            ValidatorFactory validatorFactory = new ValidatorFactory();
+            ValidatorFactory validatorFactory = ValidatorFactory.GetInstance();
             foreach (var item in o.GetType().GetProperties())
             {
                 object[] annotations = item.GetCustomAttributes(false);
