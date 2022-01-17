@@ -26,12 +26,13 @@ namespace Project.ValidationFarmework.validation
         public HashSet<Violation> validate(Object o)
         {
             HashSet<Violation> violations = new HashSet<Violation>();
+            ValidatorFactory validatorFactory = new ValidatorFactory();
             foreach (var item in o.GetType().GetProperties())
             {
                 object[] annotations = item.GetCustomAttributes(false);
                 foreach (Attribute attr in annotations)
                 {
-                    ValidatorFactory validatorFactory = new ValidatorFactory();
+            
                     Validator validator = validatorFactory.create(attr.GetType().Name);
                     Violation violation = validator.validate(item, o);
                     if (violation.getValid() == false)

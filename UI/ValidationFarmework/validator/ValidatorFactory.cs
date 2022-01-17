@@ -29,6 +29,18 @@ namespace Project.ValidationFarmework.validator
         {
             Init();
         }
+        public bool addValidator(string nameValidator, Validator newValidator)
+        {
+            if (validatorMap.ContainsKey(nameValidator))
+                return false;
+            else
+            {
+                validatorMap.Add(nameValidator, newValidator);
+                return true;
+            }
+
+        }
+
 
         private bool CheckValidatorType(string strTypeValidator)
         {

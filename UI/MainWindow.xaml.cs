@@ -23,7 +23,7 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Validation validation = new Validation();
+        private Validation validation;
         public MainWindow()
         {
             InitializeComponent();
