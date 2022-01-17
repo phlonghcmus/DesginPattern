@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using UI.ValidationFarmework.helper;
 
 namespace Project.ValidationFarmework.validator
 {
@@ -13,7 +14,7 @@ namespace Project.ValidationFarmework.validator
     {
         public DateValidator()
         {
-
+            Helper = new DateValidation();
         }
         protected override string getMessage(PropertyInfo prop)
         {
@@ -23,7 +24,7 @@ namespace Project.ValidationFarmework.validator
 
         protected override bool invalid(PropertyInfo prop, object value)
         {
-            return !ValidationHelper.IsDateTime((string)value);
+            return !Helper.IsValid((string)value);
         }
     }
 }

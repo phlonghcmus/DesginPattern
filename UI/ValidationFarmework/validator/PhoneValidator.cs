@@ -6,12 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Project.ValidationFarmework.anotation;
 using Project.ValidationFarmework.helper;
+using UI.ValidationFarmework.helper;
 
 namespace Project.ValidationFarmework.validator
 {
     internal class PhoneValidator: Validator
     {
-        public PhoneValidator() { }
+        public PhoneValidator() {
+            Helper = new PhoneValidation();
+        }
 
         protected override string getMessage(PropertyInfo prop)
         {
@@ -21,7 +24,7 @@ namespace Project.ValidationFarmework.validator
 
         protected override bool invalid(PropertyInfo prop, object value)
         {
-            return !ValidationHelper.IsValidPhone((string)value);
+            return !Helper.IsValid((string)value);
         }
     }
 }

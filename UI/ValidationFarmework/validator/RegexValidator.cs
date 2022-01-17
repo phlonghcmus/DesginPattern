@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Regex = Project.ValidationFarmework.anotation.Regex;
 using Project.ValidationFarmework.anotation;
+using UI.ValidationFarmework.helper;
 
 namespace Project.ValidationFarmework.validator
 {
@@ -14,7 +15,7 @@ namespace Project.ValidationFarmework.validator
     {
         public RegexValidator()
         {
-
+            Helper = new RegexValidation();
         }
         protected override string getMessage(PropertyInfo prop)
         {
@@ -24,7 +25,7 @@ namespace Project.ValidationFarmework.validator
 
         protected override bool invalid(PropertyInfo prop, object value)
         {
-            return !ValidationHelper.IsValidRegex((string)value);
+            return !Helper.IsValid((string)value);
         }
     }
 }

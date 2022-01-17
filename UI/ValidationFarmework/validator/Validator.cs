@@ -1,4 +1,5 @@
-﻿using Project.ValidationFarmework.violation;
+﻿using Project.ValidationFarmework.helper;
+using Project.ValidationFarmework.violation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace Project.ValidationFarmework.validator
 {
     public abstract class Validator
     {
+       protected ValidationHelper Helper;
        public Violation validate(PropertyInfo prop, object o)
        {
             Object value = prop.GetValue(o);
