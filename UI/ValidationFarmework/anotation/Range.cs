@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ValidationFarmework.anotation
 {
+
     public class Range : Anotation
     {
         public int LengthMax { get; set; }

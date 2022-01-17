@@ -13,7 +13,7 @@ namespace Project.ValidationFarmework.validator
        public Violation validate(PropertyInfo prop, object o)
        {
             Object value = prop.GetValue(o);
-            Violation violation = new ImplViolation(prop.Name,value);
+            Violation violation = new ImplViolation(prop.Name, value);
             if (this.invalid(prop, value))
             {
                 violation.setMessage(this.getMessage(prop));

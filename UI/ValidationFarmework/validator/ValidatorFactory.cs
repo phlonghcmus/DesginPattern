@@ -19,6 +19,7 @@ namespace Project.ValidationFarmework.validator
             validatorMap.Add("Phone", new PhoneValidator());
             validatorMap.Add("Range", new RangeValidator());
             validatorMap.Add("Max", new MaxValidator());
+            validatorMap.Add("Regex", new RegexValidator());
             validatorMap.Add("Date", new DateValidator());
             validatorMap.Add("IsInt", new IsIntValidator());
             validatorMap.Add("IsFloat", new IsFloatValidator());
@@ -35,7 +36,7 @@ namespace Project.ValidationFarmework.validator
             return validatorMap.ContainsKey(strTypeValidator);
         }
 
-        public Validator create(string strTypeValidator)
+        public Validator? create(string strTypeValidator)
         {
             if (CheckValidatorType(strTypeValidator))
                 return validatorMap[strTypeValidator];

@@ -31,15 +31,27 @@ namespace UI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string intString = "12.3";
-            string floatString = "123";
-            User user = new User(taikhoan.Text, matkhau.Text,email.Text,date.Text,intString,floatString);
-            Validation validation = new Validation();
+            User user = new User(taikhoan.Text, matkhau.Text, email.Text, date.Text, regex.Text);
+            //User user = new User((string)taikhoan.Text);
+            Validation validation = Validation.GetInstance();
             HashSet<Violation> violations = validation.validate(user);
-            foreach (Violation violation in violations)
+            List<string> notification = new List<string>();
+            foreach (var violation in violations)
             {
-                Debug.WriteLine(violation.getProp() + "-->" + violation.getMessage());
+                notification.Add(violation.getMessage());
             }
+            if(notification.Count > 0)
+            {
+                var message = string.Join(Environment.NewLine, notification.ToArray());
+                MessageBox.Show(message,"Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                MessageBox.Show("Đăng ký thành công","Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            
+
         }
+
     }
 }
