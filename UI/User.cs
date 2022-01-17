@@ -12,15 +12,14 @@ namespace UI
     {
         
 
-        public User(string taikhoan, string matkhau, string email, string date,string regex)
+        public User(string taikhoan, string matkhau, string email, string date)
         {
             this.taikhoan = taikhoan;
             this.matkhau = matkhau;
             this.email = email;
             this.date = date;
-            this.regex = regex;
-            //this.intNumber=intString;
-            //this.floatNumber = floatString;
+            
+            
         }
         [Required(ErrorMessage = "Tài khoản là bắt buộc")]
         [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Tài khoản phải dài từ 8-16 ký tự")]
@@ -37,8 +36,7 @@ namespace UI
         [Date(ErrorMessage = "Ngày không đúng định dạng")]
         public string date { get; set; }
 
-        [Regex(ErrorMessage = "Regex không đúng")]
-        public string regex { get; set; }
+      
 
         
     }

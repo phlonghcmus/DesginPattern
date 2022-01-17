@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MyForm" Height="519" Width="400">
+        Title="MyForm" Height="419" Width="400">
     <Grid>
         <Label Content="Form đăng ký" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" FontSize="40"/>
 
@@ -21,10 +21,8 @@
         <Label Content="Date" HorizontalAlignment="Left" Height="29" Margin="22,252,0,0" VerticalAlignment="Top" Width="70"/>
         <TextBox x:Name="date" HorizontalAlignment="Center" Height="28" Margin="0,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
 
-        <Label Content="Regex" HorizontalAlignment="Left" Height="29" Margin="22,309,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="regex" HorizontalAlignment="Center" Height="28" Margin="0,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
 
-        <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,409,22,0" Click="Button_Click"/>
+        <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,327,22,0" Click="Button_Click"/>
 
     </Grid>
 </Window>

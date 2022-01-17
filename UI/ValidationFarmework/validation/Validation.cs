@@ -11,7 +11,7 @@ namespace Project.ValidationFarmework.validation
     public class Validation
     {
         private static Validation _instance;
-        public Validation()
+        private Validation()
         {
         }
         public static Validation GetInstance()
