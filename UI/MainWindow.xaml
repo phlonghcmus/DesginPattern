@@ -17,6 +17,5 @@
         <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="21,194,0,0" VerticalAlignment="Top" Width="70"/>
         <Label Content="Date" HorizontalAlignment="Left" Height="29" Margin="21,260,0,0" VerticalAlignment="Top" Width="70"/>
         <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,350,22,0" Click="Button_Click"/>
-
     </Grid>
 </Window>

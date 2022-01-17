@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\UI",
+    "\\UI\\ValidationFarmework",
+    "\\UI\\ValidationFarmework\\helper"
   ],
+  "SelectedNode": "\\UI\\ValidationFarmework\\helper\\ValidationHelper.cs",
   "PreviewInSolutionExplorer": false
 }
