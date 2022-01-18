@@ -35,7 +35,7 @@ namespace UI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(taikhoan.Text, matkhau.Text, email.Text, date.Text);
+            User user = new User(taikhoan.Text, matkhau.Password, email.Text, date.Text);
             //User user = new User((string)taikhoan.Text);
             Validation validation = Validation.GetInstance();
             HashSet<Violation> violations = validation.validate(user);

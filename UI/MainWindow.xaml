@@ -13,7 +13,7 @@
         <TextBox x:Name="taikhoan" HorizontalAlignment="Center" Height="28" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
 
         <Label Content="Mật khẩu" HorizontalAlignment="Left" Height="29" Margin="22,138,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+        <PasswordBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,167,0,0" VerticalAlignment="Top" Width="356"/>
 
         <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="22,195,0,0" VerticalAlignment="Top" Width="70"/>
         <TextBox x:Name="email" HorizontalAlignment="Center" Height="28" Margin="0,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
