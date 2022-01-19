@@ -21,7 +21,7 @@ namespace UI
             this.date = date;
             
         }
-        [NewVal(ErrorMessage = "Không thỏa mãn New Validation")]
+        //[NewVal(ErrorMessage = "Không thỏa mãn New Validation")]
         [Required(ErrorMessage = "Tài khoản là bắt buộc")]
         [Range(LengthMin = 8, LengthMax = 50, ErrorMessage = "Tài khoản phải dài từ 8-16 ký tự")]
         public string taikhoan { get; set; }

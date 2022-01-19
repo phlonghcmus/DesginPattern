@@ -5,24 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MyForm" Height="419" Width="400">
-    <Grid>
-        <Label Content="Form đăng ký" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" FontSize="40"/>
+        Title="MyForm" Height="549" Width="400">
+	<Grid>
+		<Label Content="Form đăng ký" HorizontalAlignment="Center" Height="66" VerticalAlignment="Top" Width="254" FontSize="40"/>
 
-        <Label Content="Tài khoản" HorizontalAlignment="Left" Height="29" Margin="22,81,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="taikhoan" HorizontalAlignment="Center" Height="28" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
+		<Label Content="Tài khoản" HorizontalAlignment="Left" Height="29" Margin="22,66,0,0" VerticalAlignment="Top" Width="70"/>
+		<TextBox x:Name="taikhoan" HorizontalAlignment="Center" Height="28" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
 
-        <Label Content="Mật khẩu" HorizontalAlignment="Left" Height="29" Margin="22,138,0,0" VerticalAlignment="Top" Width="70"/>
-        <PasswordBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,167,0,0" VerticalAlignment="Top" Width="356"/>
+		<Label Content="Mật khẩu" HorizontalAlignment="Left" Height="29" Margin="22,155,0,0" VerticalAlignment="Top" Width="70"/>
+		<PasswordBox x:Name="matkhau" HorizontalAlignment="Center" Height="28" Margin="0,184,0,0" VerticalAlignment="Top" Width="356"/>
 
-        <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="22,195,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="email" HorizontalAlignment="Center" Height="28" Margin="0,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+		<Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="22,246,0,0" VerticalAlignment="Top" Width="70"/>
+		<TextBox x:Name="email" HorizontalAlignment="Center" Height="28" Margin="0,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
 
-        <Label Content="Date" HorizontalAlignment="Left" Height="29" Margin="22,252,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="date" HorizontalAlignment="Center" Height="28" Margin="0,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+		<Label Content="Date" HorizontalAlignment="Left" Height="25" Margin="22,336,0,0" VerticalAlignment="Top" Width="70"/>
+		<TextBox x:Name="date" HorizontalAlignment="Center" Height="28" Margin="0,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
 
 
-        <Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="21,327,22,0" Click="Button_Click"/>
+		<Button Content="Đăng ký" Height="43" VerticalAlignment="Top" Margin="22,451,21,0" Click="Button_Click"/>
+		<TextBlock Foreground="Red" x:Name="taikhoanerror"  HorizontalAlignment="Center" Margin="0,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334"/>
+		<TextBlock Foreground="Red" x:Name="matkhauerror"  HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334"/>
+		<TextBlock Foreground="Red" x:Name="emailerror"  HorizontalAlignment="Center" Margin="0,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334"/>
+		<TextBlock Foreground="Red" x:Name="dateerror"  HorizontalAlignment="Center" Margin="0,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334"/>
 
-    </Grid>
+
+	</Grid>
 </Window>

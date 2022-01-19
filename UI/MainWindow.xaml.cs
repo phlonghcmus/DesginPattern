@@ -39,21 +39,29 @@ namespace UI
             //User user = new User((string)taikhoan.Text);
             Validation validation = Validation.GetInstance();
             HashSet<Violation> violations = validation.validate(user);
-            List<string> notification = new List<string>();
+            //List<string> notification = new List<string>();
+            List<KeyValuePair<string, string>> notification = new List<KeyValuePair<string, string>>();
+
             foreach (var violation in violations)
-            {
-                notification.Add(violation.getMessage());
+            { 
+                notification.Add(new KeyValuePair<string, string>(violation.getProp(), violation.getMessage()));
             }
-            if(notification.Count > 0)
-            {
-                var message = string.Join(Environment.NewLine, notification.ToArray());
-                MessageBox.Show(message,"Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            else
-            {
-                MessageBox.Show("Đăng ký thành công","Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            
+
+            taikhoanerror.Text = notification.Find(item => item.Key == "taikhoan").Value;
+            matkhauerror.Text = notification.Find(item => item.Key == "matkhau").Value;
+            emailerror.Text = notification.Find(item => item.Key == "email").Value;
+            dateerror.Text = notification.Find(item => item.Key == "date").Value;
+
+            //if(notification.Count > 0)
+            //{
+            //    var message = string.Join(Environment.NewLine, notification.ToArray());
+            //    MessageBox.Show(message,"Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Đăng ký thành công","Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            //}
+
 
         }
 

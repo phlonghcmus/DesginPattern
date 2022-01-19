@@ -1,13 +1,51 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Project.ValidationFarmework.violation
 {
-    public interface Violation
+    public class Violation
     {
-        void setMessage(string message);
-        void setValid(bool valid);
-        bool getValid();
-        string getProp();
-        string getMessage();
+        private string propName;
+        private object value;
+        private string message;
+        private bool valid = true;
+        public Violation(string propName, object value)
+        {
+            this.propName = propName;
+            this.value = value;
+            message = "";
+        }
+
+        public string getMessage()
+        {
+            return message;
+        }
+
+        public string getProp()
+        {
+            return propName;
+        }
+
+        public bool getValid()
+        {
+            return valid;
+        }
+
+        public void setMessage(string message)
+        {
+            this.message = message;
+        }
+
+        public void setValid(bool valid)
+        {
+            this.valid = valid;
+        }
+
+       
+
     }
 }
