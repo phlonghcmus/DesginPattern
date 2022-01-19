@@ -49,24 +49,24 @@ namespace UI
 
             foreach (var violation in violations)
             {
-                if (violation.getProp() == "taikhoan")
+                if (violation.PropName == "taikhoan")
                 {
-                    list_taikhoan.Add(violation.getMessage());
+                    list_taikhoan.Add(violation.Message);
                     continue;
                 }
-                if (violation.getProp() == "matkhau")
+                if (violation.PropName == "matkhau")
                 {
-                    list_matkhau.Add(violation.getMessage());
+                    list_matkhau.Add(violation.Message);
                     continue;
                 }
-                if (violation.getProp() == "email")
+                if (violation.PropName == "email")
                 {
-                    list_email.Add(violation.getMessage());
+                    list_email.Add(violation.Message);
                     continue;
                 }
-                if (violation.getProp() == "date")
+                if (violation.PropName == "date")
                 {
-                    list_date.Add(violation.getMessage());
+                    list_date.Add(violation.Message);
                     continue;
                 }
             }

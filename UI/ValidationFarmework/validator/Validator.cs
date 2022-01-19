@@ -18,8 +18,11 @@ namespace Project.ValidationFarmework.validator
             Violation violation = new Violation(prop.Name, value);
             if (this.invalid(prop, value))
             {
-                violation.setMessage(this.getMessage(prop));
-                violation.setValid(false);
+                //violation.setMessage(this.getMessage(prop));
+                //violation.setValid(false);
+
+                violation.Message= this.getMessage(prop);
+                violation.Valid = false;
                
             }
             return violation;

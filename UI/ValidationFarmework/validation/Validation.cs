@@ -36,7 +36,7 @@ namespace Project.ValidationFarmework.validation
             
                     Validator validator = validatorFactory.create(attr.GetType().Name);
                     Violation violation = validator.validate(item, o);
-                    if (violation.getValid() == false)
+                    if (violation.Valid == false)
                     {
                         violations.Add(violation);
                     }
