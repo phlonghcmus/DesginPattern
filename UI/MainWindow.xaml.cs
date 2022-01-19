@@ -41,27 +41,40 @@ namespace UI
             HashSet<Violation> violations = validation.validate(user);
             //List<string> notification = new List<string>();
             List<KeyValuePair<string, string>> notification = new List<KeyValuePair<string, string>>();
+            var list_taikhoan = new List<string>();
+            var list_matkhau = new List<string>();
+            var list_email = new List<string>();
+            var list_date = new List<string>();
+
 
             foreach (var violation in violations)
-            { 
-                notification.Add(new KeyValuePair<string, string>(violation.getProp(), violation.getMessage()));
+            {
+                if (violation.getProp() == "taikhoan")
+                {
+                    list_taikhoan.Add(violation.getMessage());
+                    continue;
+                }
+                if (violation.getProp() == "matkhau")
+                {
+                    list_matkhau.Add(violation.getMessage());
+                    continue;
+                }
+                if (violation.getProp() == "email")
+                {
+                    list_email.Add(violation.getMessage());
+                    continue;
+                }
+                if (violation.getProp() == "date")
+                {
+                    list_date.Add(violation.getMessage());
+                    continue;
+                }
             }
 
-            taikhoanerror.Text = notification.Find(item => item.Key == "taikhoan").Value;
-            matkhauerror.Text = notification.Find(item => item.Key == "matkhau").Value;
-            emailerror.Text = notification.Find(item => item.Key == "email").Value;
-            dateerror.Text = notification.Find(item => item.Key == "date").Value;
-
-            //if(notification.Count > 0)
-            //{
-            //    var message = string.Join(Environment.NewLine, notification.ToArray());
-            //    MessageBox.Show(message,"Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Đăng ký thành công","Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            //}
-
+            listview_taikhoan.ItemsSource = list_taikhoan;
+            listview_matkhau.ItemsSource = list_matkhau;
+            listview_email.ItemsSource = list_email;
+            listview_date.ItemsSource = list_date;
 
         }
 
